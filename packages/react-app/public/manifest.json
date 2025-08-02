@@ -1,6 +1,6 @@
 {
-  "short_name": "React Starter",
-  "name": "React Starter",
+  "short_name": "Olympics",
+  "name": "Olympics",
   "start_url": ".",
   "display": "standalone"
 }

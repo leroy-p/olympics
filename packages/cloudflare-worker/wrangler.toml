@@ -1,0 +1,9 @@
+name = "olympics-worker"
+account_id = "1ac1a4dd2a9d85eaec0ac369a85baafe"
+compatibility_date = "2024-07-29"
+
+main = "src/index.js"
+
+[[r2_buckets]]
+binding = "STORE"
+bucket_name = "olympics-store"

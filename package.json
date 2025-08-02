@@ -1,9 +1,10 @@
 {
-  "name": "react-starter",
+  "name": "olympics",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "build:react-app": "vite build --config packages/react-app/vite.config.ts",
+    "deploy:worker": "cd packages/cloudflare-worker && npx wrangler deploy",
     "format": "biome check --write"
   },
   "dependencies": {
