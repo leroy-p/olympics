@@ -1,0 +1,12 @@
+{
+  "name": "@react-starter/react-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "i18n:generate": "i18next 'src/**/*.{ts,tsx}' -c 'i18next-parser.config.js'",
+    "clean": "rm -rf dist"
+  }
+}
