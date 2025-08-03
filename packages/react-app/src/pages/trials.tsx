@@ -20,7 +20,7 @@ export default function Trials() {
       <Container>
         <p className="page-title">{t('trials.page-title')}</p>
         <div className="trials-container">
-          {trials ? (
+          {trials?.length ? (
             trials.map((trial, index) => (
               <TrialContainer
                 edit={() => setTrialToUpdate(trial)}

@@ -32,7 +32,7 @@
   {
     "id": 6,
     "name": "Martin",
-    "pic": "/images/martin.jpg",
+    "pic": "/images/martin.png",
     "points": 0
   },
   {
@@ -44,7 +44,7 @@
   {
     "id": 8,
     "name": "Yann",
-    "pic": "/images/yann.jpg",
+    "pic": "/images/yann.png",
     "points": 0
   }
 ]

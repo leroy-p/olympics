@@ -41,6 +41,7 @@
     }
   },
   "trials": {
+    "no-result": "No trial has been created yet.",
     "page-title": "Trials"
   }
 }
