@@ -65,6 +65,11 @@ const Container = styled.div`
       width: 64px;
     }
 
+    & > p {
+      font-size: 16px;
+      margin-top: 16px;
+    }
+
     .edit-button {
       border: ${({ theme }) => `solid 1px ${theme.palette.primary}`};
       border-radius: 50%;
