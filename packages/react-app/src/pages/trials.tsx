@@ -19,20 +19,20 @@ export default function Trials() {
     <Layout>
       <Container>
         <p className="page-title">{t('trials.page-title')}</p>
-        <div className="trials-container">
-          {trials?.length ? (
-            trials.map((trial, index) => (
+        {trials?.length ? (
+          <div className="trials-container">
+            {trials.map((trial, index) => (
               <TrialContainer
                 edit={() => setTrialToUpdate(trial)}
                 key={index}
                 open={() => setSelectedTrial(trial)}
                 trial={trial}
               />
-            ))
-          ) : (
-            <p className="no-trial">{t('trials.no-result')}</p>
-          )}
-        </div>
+            ))}
+          </div>
+        ) : (
+          <p className="no-trial">{t('trials.no-result')}</p>
+        )}
         <DialogTrial close={() => setSelectedTrial(undefined)} trial={selectedTrial} visible={Boolean(selectedTrial)} />
         {players && (
           <DialogTrialForm
