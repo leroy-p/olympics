@@ -30,7 +30,7 @@ const Input = styled.input<{
   $hidden?: boolean
   $highlighted?: boolean
 }>`
-  height: 40px;
+  height: 32px;
   background-color: ${({ $highlighted, theme }) => ($highlighted ? theme.palette.secondary : 'transparent')};
   border: ${({ theme }) => `solid 1px ${theme.palette.primary}`};
   border-radius: 10px;

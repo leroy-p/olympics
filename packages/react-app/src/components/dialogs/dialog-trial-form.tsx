@@ -119,9 +119,13 @@ const Container = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
     justify-content: center;
     padding: 24px;
     width: 100%;
+
+    & > button {
+      margin-top: 12px;
+    }
   }
 `

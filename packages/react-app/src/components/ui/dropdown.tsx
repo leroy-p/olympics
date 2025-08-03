@@ -61,7 +61,7 @@ const Container = styled.div<{
   $empty?: boolean
   $removeEnabled?: boolean
 }>`
-  height: 40px;
+  height: 32px;
   background-color: ${({ $highlighted, theme }) => ($highlighted ? theme.palette.secondary : 'transparent')};
   border: ${({ theme }) => `solid 1px ${theme.palette.primary}`};
   border-radius: 10px;
@@ -114,7 +114,7 @@ const Container = styled.div<{
     pointer-events: none;
     position: absolute;
     right: 8px;
-    top: 16px;
+    top: 12px;
     width: auto;
   }
 
@@ -123,7 +123,7 @@ const Container = styled.div<{
     pointer-events: none;
     position: absolute;
     right: 8px;
-    top: 12px;
+    top: 8px;
     width: 12px;
 
     & > img {
