@@ -1,40 +1,48 @@
 [
   {
+    "id": 1,
     "name": "Anthony",
     "pic": "/images/anthony.png",
     "points": 0
   },
   {
+    "id": 2,
     "name": "Aurélien",
     "pic": "/images/aurelien.png",
     "points": 0
   },
   {
+    "id": 3,
     "name": "Étienne",
     "pic": "/images/etienne.png",
     "points": 0
   },
   {
+    "id": 4,
     "name": "Julien",
     "pic": "/images/julien.png",
     "points": 0
   },
   {
+    "id": 5,
     "name": "Leslie",
     "pic": "/images/leslie.png",
     "points": 0
   },
   {
+    "id": 6,
     "name": "Martin",
     "pic": "/images/martin.jpg",
     "points": 0
   },
   {
+    "id": 7,
     "name": "Nathalie",
     "pic": "/images/nathalie.png",
     "points": 0
   },
   {
+    "id": 8,
     "name": "Yann",
     "pic": "/images/yann.jpg",
     "points": 0

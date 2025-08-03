@@ -1,11 +1,11 @@
 import React, { Suspense } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-
-import { RoutePath } from './router-config'
 import NotFound from '../pages/error/not-found'
+import Leaderboard from '../pages/leaderboard'
 import Loading from '../pages/loading/loading'
-import Root from '../pages/root'
+import Trials from '../pages/trials'
 import Page from './page'
+import { RoutePath } from './router-config'
 
 interface IRouteParams {
   component: React.ReactNode
@@ -15,9 +15,14 @@ interface IRouteParams {
 
 const routes: IRouteParams[] = [
   {
-    component: <Root />,
-    path: RoutePath.ROOT,
-    pageKey: 'root',
+    component: <Leaderboard />,
+    path: RoutePath.LEADERBOARD,
+    pageKey: 'leaderboard',
+  },
+  {
+    component: <Trials />,
+    path: RoutePath.TRIALS,
+    pageKey: 'trials',
   },
 ]
 

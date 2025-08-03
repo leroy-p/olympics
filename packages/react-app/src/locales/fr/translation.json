@@ -1,4 +1,31 @@
 {
+  "common": {
+    "organiser": "::common.organiser",
+    "ranking": "::common.ranking",
+    "total-points": "::common.total-points"
+  },
+  "dialog": {
+    "add-trial": {
+      "title": "::dialog.add-trial.title"
+    },
+    "enter-trial-name": "::dialog.enter-trial-name",
+    "menu": {
+      "title": "::dialog.menu.title"
+    },
+    "player": {
+      "title": "::dialog.player.title"
+    },
+    "update-trial": {
+      "title": "::dialog.update-trial.title"
+    }
+  },
+  "leaderboard": {
+    "new-trial": "::leaderboard.new-trial",
+    "page-title": "::leaderboard.page-title",
+    "table": {
+      "title": "::leaderboard.table.title"
+    }
+  },
   "loading": {
     "title": "Chargement..."
   },
@@ -7,9 +34,13 @@
     "page-title": "404",
     "title": "404"
   },
-  "root": {
-    "message": "Ceci est la page d'accueil.",
-    "page-title": "Accueil",
-    "title": "Accueil"
+  "table": {
+    "label": {
+      "player": "::table.label.player",
+      "points": "::table.label.points"
+    }
+  },
+  "trials": {
+    "page-title": "::trials.page-title"
   }
 }

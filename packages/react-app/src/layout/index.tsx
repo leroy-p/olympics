@@ -1,6 +1,7 @@
 import React from 'react'
 import Div100vh from 'react-div-100vh'
 import styled from 'styled-components'
+import background from '../assets/images/backgrounds/background.png'
 import Footer from './footer'
 import Header from './header'
 import Main from './main'
@@ -21,11 +22,15 @@ export default function Layout({ children }: IProps) {
 
 const Container = styled(Div100vh)`
   align-items: center;
-  background-color: ${({ theme }) => theme.palette.secondary};
+  background-image: url(${background});
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow-x: hidden;
   overflow-y: auto;
-  width: 100vw;
+
+  @media screen and (max-width: 540px) {
+    width: 100vw;
+  }
 `

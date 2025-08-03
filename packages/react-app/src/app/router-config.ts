@@ -20,9 +20,11 @@ export function generateRoutePath<T extends keyof IRoutePathParams>(path: T, par
 }
 
 export enum RoutePath {
-  ROOT = '/',
+  LEADERBOARD = '/',
+  TRIALS = '/trials',
 }
 
 export interface IRoutePathParams {
-  [RoutePath.ROOT]: {}
+  [RoutePath.LEADERBOARD]: {}
+  [RoutePath.TRIALS]: {}
 }

@@ -14,6 +14,11 @@ const Container = styled.main`
   display: flex;
   flex-direction: column;
   height: calc(100% - 48px);
-  justify-content: center;
-  width: 100%;
+  justify-content: flex-start;
+  padding: 0 24px;
+  width: 480px;
+
+  @media screen and (max-width: 540px) {
+    width: 100vw;
+  }
 `

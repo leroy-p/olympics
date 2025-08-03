@@ -5,7 +5,8 @@ export default function PageTitles() {
 
   return (
     <>
-      {t('root.page-title')}
+      {t('leaderboard.page-title')}
+      {t('trials.page-title')}
       {t('not-found.page-title')}
     </>
   )

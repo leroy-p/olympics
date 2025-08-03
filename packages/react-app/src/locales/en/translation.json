@@ -1,4 +1,31 @@
 {
+  "common": {
+    "organiser": "Organiser",
+    "ranking": "Ranking",
+    "total-points": "Total points"
+  },
+  "dialog": {
+    "add-trial": {
+      "title": "New trial"
+    },
+    "enter-trial-name": "Enter a name...",
+    "menu": {
+      "title": "Menu"
+    },
+    "player": {
+      "title": "Player"
+    },
+    "update-trial": {
+      "title": "Update trial"
+    }
+  },
+  "leaderboard": {
+    "new-trial": "New trial",
+    "page-title": "Leaderboard",
+    "table": {
+      "title": "Overall Ranking"
+    }
+  },
   "loading": {
     "title": "Loading..."
   },
@@ -7,9 +34,13 @@
     "page-title": "404",
     "title": "404"
   },
-  "root": {
-    "message": "This is the home page.",
-    "page-title": "Home",
-    "title": "Home"
+  "table": {
+    "label": {
+      "player": "Player",
+      "points": "Points"
+    }
+  },
+  "trials": {
+    "page-title": "Trials"
   }
 }

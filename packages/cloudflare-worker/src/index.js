@@ -12,11 +12,11 @@ export default {
       })
     }
 
-    if (request.method === 'GET' && url.pathname === '/data') {
+    if (request.method === 'GET' && url.pathname === '/players') {
       const object = await env.STORE.get('players.json')
 
       if (!object) {
-        return new Response('File not found.', { status: 404 })
+        return new Response('File not found: players.json.', { status: 404 })
       }
 
       return new Response(object.body, {
@@ -27,7 +27,7 @@ export default {
       })
     }
 
-    if (request.method === 'POST' && url.pathname === '/data') {
+    if (request.method === 'POST' && url.pathname === '/players') {
       const json = await request.json()
       await env.STORE.put('players.json', JSON.stringify(json), {
         httpMetadata: {
@@ -35,7 +35,38 @@ export default {
         },
       })
 
-      return new Response('File updated.', {
+      return new Response('File updated: players.json.', {
+        status: 200,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+        },
+      })
+    }
+
+    if (request.method === 'GET' && url.pathname === '/trials') {
+      const object = await env.STORE.get('trials.json')
+
+      if (!object) {
+        return new Response('File not found: trials.json.', { status: 404 })
+      }
+
+      return new Response(object.body, {
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
+      })
+    }
+
+    if (request.method === 'POST' && url.pathname === '/trials') {
+      const json = await request.json()
+      await env.STORE.put('trials.json', JSON.stringify(json), {
+        httpMetadata: {
+          contentType: 'application/json',
+        },
+      })
+
+      return new Response('File updated: trials.json.', {
         status: 200,
         headers: {
           'Access-Control-Allow-Origin': '*',
