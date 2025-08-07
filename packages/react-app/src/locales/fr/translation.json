@@ -36,6 +36,7 @@
   },
   "table": {
     "label": {
+      "p1-count": "::table.label.p1-count",
       "player": "::table.label.player",
       "points": "::table.label.points"
     }

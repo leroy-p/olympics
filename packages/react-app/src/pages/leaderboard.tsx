@@ -26,9 +26,11 @@ export default function Leaderboard() {
               pic: player.pic,
               name: player.name,
               points: player.points,
+              p1Count: trials.filter((trial) => trial.ranking[0] === player.id).length,
               select: () => setSelectedPlayer(player),
             }))}
             title={t('leaderboard.table.title')}
+            withP1Count
           />
           <Button onClick={() => setShowTrialFormDialog(true)}>{t('leaderboard.new-trial')}</Button>
           <DialogPlayer

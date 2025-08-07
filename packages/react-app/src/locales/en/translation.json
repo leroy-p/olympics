@@ -36,6 +36,7 @@
   },
   "table": {
     "label": {
+      "p1-count": "Top 1",
       "player": "Player",
       "points": "Points"
     }

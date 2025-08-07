@@ -21,13 +21,6 @@ export function useGameContext() {
   const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
-    async function getPlayers() {
-      const res = await fetch(`${WORKER_URL}/players`)
-      const data = (await res.json()) as IPlayer[]
-
-      setPlayers(data.sort(sortPlayers))
-    }
-
     async function getTrials() {
       const res = await fetch(`${WORKER_URL}/trials`)
       const data = (await res.json()) as ITrial[]
@@ -35,14 +28,22 @@ export function useGameContext() {
       setTrials(data)
     }
 
-    async function getData() {
-      await Promise.all([getPlayers(), getTrials()])
+    getTrials()
+  }, [])
 
+  useEffect(() => {
+    if (!trials) return
+
+    async function getPlayers() {
+      const res = await fetch(`${WORKER_URL}/players`)
+      const data = (await res.json()) as IPlayer[]
+
+      setPlayers(data.sort(sortPlayers))
       setLoading(false)
     }
 
-    getData()
-  }, [])
+    getPlayers()
+  }, [trials])
 
   async function updatePlayers(data: IPlayer[]) {
     await fetch(`${WORKER_URL}/players`, {
@@ -106,8 +107,17 @@ export function useGameContext() {
   }
 
   function sortPlayers(p1: IPlayer, p2: IPlayer) {
+    if (!trials) return p1.name.localeCompare(p2.name)
+
     if (p1.points === p2.points) {
-      return p1.name.localeCompare(p2.name)
+      const p1Count1 = trials.filter((trial) => trial.ranking[0] === p1.id).length
+      const p1Count2 = trials.filter((trial) => trial.ranking[0] === p2.id).length
+
+      if (p1Count1 === p1Count2) {
+        return p2.name.localeCompare(p1.name)
+      }
+
+      return p1Count2 - p1Count1
     }
 
     return p2.points - p1.points
