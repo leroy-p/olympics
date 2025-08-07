@@ -67,7 +67,7 @@ const Container = styled.div`
   .trials-container {
     display: grid;
     gap: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(158px, max-content));
+    grid-template-columns: repeat(auto-fill, minmax(140px, max-content));
     justify-content: center;
     justify-items: start;
     width: 100%;

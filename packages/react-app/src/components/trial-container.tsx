@@ -44,7 +44,7 @@ const Container = styled.div`
   flex-direction: column;
   height: 120px;
   justify-content: flex-end;
-  width: 158px;
+  width: 140px;
 
   .content-container {
     align-items: center;
