@@ -114,7 +114,7 @@ export function useGameContext() {
       const p1Count2 = trials.filter((trial) => trial.ranking[0] === p2.id).length
 
       if (p1Count1 === p1Count2) {
-        return p2.name.localeCompare(p1.name)
+        return p1.name.localeCompare(p2.name)
       }
 
       return p1Count2 - p1Count1
