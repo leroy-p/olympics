@@ -7,26 +7,26 @@
   },
   {
     "id": 2,
-    "name": "Aurélien",
-    "pic": "/images/aurelien.png",
+    "name": "Clément",
+    "pic": "/images/clement.png",
     "points": 0
   },
   {
     "id": 3,
-    "name": "Étienne",
+    "name": "Etienne",
     "pic": "/images/etienne.png",
     "points": 0
   },
   {
     "id": 4,
-    "name": "Julien",
-    "pic": "/images/julien.png",
+    "name": "Ludovic",
+    "pic": "/images/ludovic.png",
     "points": 0
   },
   {
     "id": 5,
-    "name": "Leslie",
-    "pic": "/images/leslie.png",
+    "name": "Malik",
+    "pic": "/images/malik.png",
     "points": 0
   },
   {
@@ -37,14 +37,14 @@
   },
   {
     "id": 7,
-    "name": "Nathalie",
-    "pic": "/images/nathalie.png",
+    "name": "Quentin",
+    "pic": "/images/quentin.png",
     "points": 0
   },
   {
     "id": 8,
-    "name": "Yann",
-    "pic": "/images/yann.png",
+    "name": "Thomas",
+    "pic": "/images/thomas.png",
     "points": 0
   }
 ]
